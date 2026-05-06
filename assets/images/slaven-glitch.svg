@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Donkere roze achtergrond</title>
+  <desc id="desc">Een donkere zwart-roze abstracte achtergrond met zachte glitch-achtige wolken.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050205"/>
+      <stop offset="48%" stop-color="#130711"/>
+      <stop offset="100%" stop-color="#060306"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff79b0"/>
+      <stop offset="55%" stop-color="#bc3a73"/>
+      <stop offset="100%" stop-color="#722245"/>
+    </linearGradient>
+    <filter id="blur-soft" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+    <filter id="blur-strong" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="58"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+
+  <g filter="url(#blur-strong)" opacity="0.88">
+    <ellipse cx="1180" cy="180" rx="340" ry="180" fill="#ac3567"/>
+    <ellipse cx="1450" cy="300" rx="220" ry="170" fill="#7d234c"/>
+    <ellipse cx="260" cy="800" rx="300" ry="200" fill="#bf477b"/>
+    <ellipse cx="920" cy="820" rx="280" ry="190" fill="#a72f62"/>
+    <ellipse cx="500" cy="360" rx="230" ry="210" fill="#5a1736"/>
+  </g>
+
+  <g filter="url(#blur-soft)" opacity="0.82">
+    <path d="M-80 410 C150 320, 250 520, 470 450 S780 300, 980 420 S1290 560, 1680 390 L1680 620 C1400 700, 1230 560, 1030 620 S640 760, 420 650 S90 580, -80 690 Z" fill="url(#pink)"/>
+    <path d="M-60 840 C180 720, 390 920, 620 850 S1040 700, 1230 820 S1440 960, 1660 860 L1660 1180 L-60 1180 Z" fill="#8f2854"/>
+  </g>
+
+  <g filter="url(#blur-soft)" opacity="0.7">
+    <path d="M80 120 C320 40, 420 280, 640 220 S1030 40, 1280 150 S1500 290, 1650 180" fill="none" stroke="#ff8abc" stroke-width="84" stroke-linecap="round"/>
+    <path d="M-20 560 C180 500, 330 660, 550 610 S880 470, 1140 590 S1400 720, 1620 620" fill="none" stroke="#2b0919" stroke-width="110" stroke-linecap="round"/>
+    <path d="M0 960 C240 860, 410 1030, 660 960 S1010 820, 1280 940 S1480 1060, 1640 980" fill="none" stroke="#ff74ae" stroke-width="92" stroke-linecap="round" opacity="0.66"/>
+  </g>
+
+  <g opacity="0.16">
+    <rect x="70" y="140" width="300" height="16" rx="8" fill="#ffffff"/>
+    <rect x="96" y="176" width="250" height="10" rx="5" fill="#ffb8d5"/>
+    <rect x="1200" y="120" width="220" height="12" rx="6" fill="#ffffff"/>
+    <rect x="1110" y="148" width="340" height="8" rx="4" fill="#ff8fbf"/>
+  </g>
+</svg>

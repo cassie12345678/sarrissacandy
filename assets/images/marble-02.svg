@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Roze marmer achtergrond 2</title>
+  <desc id="desc">Zachte roze marmerstructuur met wolkachtige vormen.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7fa"/>
+      <stop offset="38%" stop-color="#ffdce9"/>
+      <stop offset="72%" stop-color="#ffeef4"/>
+      <stop offset="100%" stop-color="#fffefe"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <g filter="url(#soft)" opacity="0.9">
+    <ellipse cx="250" cy="250" rx="220" ry="180" fill="#fffefe"/>
+    <ellipse cx="640" cy="170" rx="260" ry="170" fill="#ffd1e2"/>
+    <ellipse cx="910" cy="450" rx="250" ry="220" fill="#ffe5ef"/>
+    <ellipse cx="420" cy="660" rx="280" ry="210" fill="#ffd8e8"/>
+    <ellipse cx="920" cy="760" rx="230" ry="130" fill="#fff7fa"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M90 120 C220 210, 280 180, 390 250 S600 380, 760 330 S960 200, 1090 260" stroke="#f4bfd4" stroke-width="16" opacity="0.5"/>
+    <path d="M-10 420 C190 360, 330 500, 510 450 S820 330, 1010 430 S1170 560, 1250 500" stroke="#dfb05e" stroke-width="6" opacity="0.65"/>
+    <path d="M30 700 C220 590, 390 770, 600 690 S940 640, 1110 760" stroke="#f2b2c9" stroke-width="18" opacity="0.42"/>
+  </g>
+</svg>

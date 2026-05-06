@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Roze marmer achtergrond 1</title>
+  <desc id="desc">Abstracte roze marmerstructuur met lichte gouden aders.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffdfd"/>
+      <stop offset="40%" stop-color="#ffe8f0"/>
+      <stop offset="75%" stop-color="#ffd7e6"/>
+      <stop offset="100%" stop-color="#fff2f7"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8e7a0"/>
+      <stop offset="50%" stop-color="#dcb76a"/>
+      <stop offset="100%" stop-color="#f7e3a2"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <g opacity="0.82" filter="url(#soft)">
+    <circle cx="260" cy="210" r="210" fill="#fff9fb"/>
+    <circle cx="770" cy="250" r="250" fill="#ffd7e6"/>
+    <circle cx="980" cy="660" r="230" fill="#ffcfe1"/>
+    <circle cx="350" cy="680" r="260" fill="#ffeef4"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-20 220 C140 160, 230 320, 360 300 S590 220, 720 320 S990 420, 1220 300" stroke="url(#gold)" stroke-width="8" opacity="0.75"/>
+    <path d="M-40 470 C140 390, 310 560, 470 500 S790 360, 1010 500 S1120 590, 1250 520" stroke="#f4bad0" stroke-width="20" opacity="0.45"/>
+    <path d="M40 760 C200 640, 390 760, 520 690 S810 620, 960 730 S1110 820, 1230 760" stroke="url(#gold)" stroke-width="7" opacity="0.62"/>
+    <path d="M120 80 C240 160, 350 120, 470 200 S710 330, 830 250 S1030 130, 1160 220" stroke="#f7c8db" stroke-width="14" opacity="0.45"/>
+  </g>
+</svg>
