@@ -60,6 +60,75 @@ document.querySelectorAll("[data-set-field]").forEach((button) => {
     });
 });
 
+document.querySelectorAll("[data-price-select]").forEach((select) => {
+    const target = document.getElementById(select.dataset.priceTarget);
+
+    if (!target) {
+        return;
+    }
+
+    const renderSelectedPrice = () => {
+        const option = select.options[select.selectedIndex];
+
+        if (!option) {
+            return;
+        }
+
+        target.innerHTML = `
+            <strong>${option.value}</strong>
+            <span>${option.dataset.note || ""}</span>
+            <b>${option.dataset.price || ""}</b>
+        `;
+    };
+
+    select.addEventListener("change", renderSelectedPrice);
+    renderSelectedPrice();
+});
+
+document.querySelectorAll("[data-tier-card]").forEach((card) => {
+    const buttons = Array.from(card.querySelectorAll("[data-tier-button]"));
+    const price = card.querySelector('[data-tier-output="price"]');
+    const note = card.querySelector('[data-tier-output="note"]');
+    const metaOne = card.querySelector('[data-tier-output="meta-one"]');
+    const metaTwo = card.querySelector('[data-tier-output="meta-two"]');
+
+    if (!buttons.length) {
+        return;
+    }
+
+    const renderTier = (button) => {
+        buttons.forEach((candidate) => {
+            const isActive = candidate === button;
+            candidate.classList.toggle("is-active", isActive);
+            candidate.setAttribute("aria-pressed", String(isActive));
+        });
+
+        if (price) {
+            price.textContent = button.dataset.tierPrice || "";
+        }
+
+        if (note) {
+            note.textContent = button.dataset.tierNote || "";
+        }
+
+        if (metaOne) {
+            metaOne.textContent = button.dataset.tierMetaOne || "";
+        }
+
+        if (metaTwo) {
+            metaTwo.textContent = button.dataset.tierMetaTwo || "";
+        }
+    };
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            renderTier(button);
+        });
+    });
+
+    renderTier(buttons.find((button) => button.classList.contains("is-active")) || buttons[0]);
+});
+
 document.querySelectorAll("[data-build-training-request]").forEach((button) => {
     button.addEventListener("click", async () => {
         const tier = document.getElementById("training-tier");

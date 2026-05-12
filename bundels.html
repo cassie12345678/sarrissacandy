@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bundel 1 | Sarrissa Candy</title>
+    <title>Bundels | Sarrissa Candy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
                 <span class="brand-mark">SC</span>
                 <span class="brand-copy">
                     <strong>Sarrissa Candy</strong>
-                    <span>Normale bundelpagina</span>
+                    <span>Bundel overzicht</span>
                 </span>
             </a>
 
@@ -25,7 +25,7 @@
                 Menu openen
             </button>
 
-            <nav class="sidebar-nav" id="sidebar-nav" data-sidebar-nav>
+            <nav class="sidebar-nav" id="sidebar-nav" data-sidebar-nav aria-label="Hoofdmenu">
                 <a class="side-link" href="index.html" data-nav-link="home">
                     <span>Home</span>
                     <small>Start</small>
@@ -53,137 +53,217 @@
             </nav>
 
             <div class="sidebar-note">
-                <p class="note-label">Bundel 1</p>
-                <p>Deze pagina is nu geen bundeloverzicht meer, maar een rustige detailpagina voor een enkele bundel.</p>
+                <p class="note-label">Showcase</p>
+                <p>Alle bundels staan nu als premium kaarten met klikbare tiers.</p>
             </div>
         </aside>
 
-        <main class="content">
-            <section class="hero-card bundle-hero" aria-labelledby="bundel1-title">
-                <div class="hero-split bundle-hero-split">
-                    <div class="bundle-copy">
-                        <p class="eyebrow">Bundel 1</p>
-                        <h1 id="bundel1-title">Een normale detailpagina voor Bundel 1.</h1>
-                        <p>Bundel 1 staat nu los op een rustige pagina met een groot beeld, korte uitleg en een directe aanvraag. Daardoor voelt de pagina veel overzichtelijker dan een lijst met meerdere bundels naast elkaar.</p>
-                        <div class="hero-badges" aria-label="Eigenschappen van Bundel 1">
-                            <span>Foto's</span>
-                            <span>Video</span>
-                            <span>Persoonlijk</span>
-                            <span>Vanaf &euro; 95,-</span>
-                        </div>
-                        <div class="bundle-actions">
-                            <a class="ghost-link" href="#bundel-aanvraag">Vraag Bundel 1 aan</a>
-                            <a class="ghost-link" href="index.html">Terug naar home</a>
-                        </div>
-                    </div>
-
-                    <div class="bundle-visual">
-                        <!-- Vervang deze src door de exacte upload zodra die als bestand in images/ staat. -->
-                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.21.11.jpeg" alt="Foto bij Bundel 1">
-                    </div>
-                </div>
+        <main class="content catalog-page">
+            <section class="hero-card catalog-hero" aria-labelledby="bundels-title">
+                <p class="eyebrow">Bundels</p>
+                <h1 id="bundels-title">Alle bundels als premium kaarten.</h1>
+                <p>Kies per kaart een tier en zie prijs en inhoud meteen wisselen.</p>
             </section>
 
-            <section class="panel" aria-labelledby="bundel-overzicht-title">
-                <div class="section-heading">
-                    <div>
-                        <p class="eyebrow">Overzicht</p>
-                        <h2 id="bundel-overzicht-title">Alles wat iemand meteen moet zien</h2>
+            <section class="catalog-grid" aria-label="Bundel overzicht">
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.21.11.jpeg" alt="Video bundel">
                     </div>
-                    <p class="section-copy">Deze opzet houdt het simpel: een focusbeeld, een korte beschrijving, een prijsrichting en een aanvraagroute.</p>
-                </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Video Bundels</h2>
+                            <p class="showcase-description">Meerdere clips in een vaste bundel, van compact tot uitgebreid.</p>
+                        </div>
 
-                <div class="bundle-detail-grid">
-                    <article class="mini-card">
-                        <strong>Inhoud</strong>
-                        <p>Gebruik dit blok voor een korte samenvatting van wat er in Bundel 1 zit, zoals een set foto's, extra sfeerbeelden of een clip.</p>
-                    </article>
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies tier voor video bundels">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€45.00" data-tier-note="eenmalig" data-tier-meta-one="3 video's" data-tier-meta-two="Compact pakket">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€75.00" data-tier-note="eenmalig" data-tier-meta-one="5 video's" data-tier-meta-two="Meer variatie">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€100.00" data-tier-note="eenmalig" data-tier-meta-one="8 video's" data-tier-meta-two="Beste value">Goud</button>
+                        </div>
 
-                    <article class="mini-card">
-                        <strong>Stijl</strong>
-                        <p>De pagina is bewust rustiger opgezet, zodat bezoekers niet hoeven te kiezen tussen meerdere kaarten of routes tegelijk.</p>
-                    </article>
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€45.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">3 video's</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Compact pakket</span>
+                        </div>
 
-                    <article class="mini-card">
-                        <strong>Prijs</strong>
-                        <p>De vanafprijs staat direct in beeld, zodat iemand snel kan inschatten of deze bundel aansluit op de wens.</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="panel" aria-labelledby="bundel-details-title">
-                <div class="section-heading">
-                    <div>
-                        <p class="eyebrow">Uitbreiden</p>
-                        <h2 id="bundel-details-title">Ruimte voor extra details</h2>
-                    </div>
-                    <p class="section-copy">Als je later meer informatie wilt toevoegen, kan dat hier zonder dat de basis van de pagina opnieuw opgebouwd hoeft te worden.</p>
-                </div>
-
-                <div class="request-layout">
-                    <article class="request-card">
-                        <p class="eyebrow">Ideeen</p>
-                        <h3>Handige blokken voor later</h3>
-                        <ul class="request-list">
-                            <li>Een exacte lijst met wat Bundel 1 bevat</li>
-                            <li>Een kleine galerij met twee of drie extra beelden</li>
-                            <li>Een knop naar boekingen of een direct contactkanaal</li>
-                            <li>Een korte regel met levertijd of beschikbaarheid</li>
+                        <ul class="showcase-features">
+                            <li>Direct digitale levering</li>
+                            <li>HD videokwaliteit</li>
+                            <li>Levenslange toegang</li>
                         </ul>
-                    </article>
 
-                    <article class="request-card">
-                        <p class="eyebrow">Samenvatting</p>
-                        <h3>Klaar voor een directe aanvraag</h3>
-                        <p class="offer-copy">Dit werkt nu als een normale verkooppagina: een bundel, een duidelijke focus en onderaan een simpele aanvraag.</p>
-                        <div class="tag-row">
-                            <span>Rustig</span>
-                            <span>Duidelijk</span>
-                            <span>Direct</span>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="panel scroll-target" id="bundel-aanvraag" aria-labelledby="bundel-aanvraag-title">
-                <div class="section-heading">
-                    <div>
-                        <p class="eyebrow">Aanvraag</p>
-                        <h2 id="bundel-aanvraag-title">Vraag Bundel 1 snel aan</h2>
+                        <button class="showcase-cta" type="button">Koop nu</button>
                     </div>
-                    <p class="section-copy">De tekst hieronder kan direct worden gekopieerd en in een bericht geplakt worden.</p>
-                </div>
+                </article>
 
-                <div class="request-layout">
-                    <article class="request-card">
-                        <p class="eyebrow">Zo werkt het</p>
-                        <h3>Houd het kort en helder</h3>
-                        <ul class="request-list">
-                            <li>Noem dat het om Bundel 1 gaat</li>
-                            <li>Geef aan welke sfeer of richting je zoekt</li>
-                            <li>Voeg eventuele extra wensen toe</li>
-                        </ul>
-                    </article>
-
-                    <article class="request-card">
-                        <p class="eyebrow">Bericht</p>
-                        <h3>Kopieer je aanvraag</h3>
-                        <div class="form-fields">
-                            <div class="field-block">
-                                <label class="field-label" for="bundle-request-text">Tekst voor Bundel 1</label>
-                                <textarea class="field-textarea" id="bundle-request-text" placeholder="Schrijf hier jouw aanvraag voor Bundel 1.">Hallo, ik wil graag meer info over Bundel 1. Ik hoor graag wat erin zit, wat de prijs is en welke mogelijkheden er zijn.</textarea>
-                            </div>
-
-                            <p class="copy-feedback" id="bundle-copy-feedback" aria-live="polite">Kopieer deze tekst en gebruik hem direct voor je aanvraag.</p>
-                            <button class="copy-button" type="button" data-copy-textarea="bundle-request-text" data-copy-feedback="bundle-copy-feedback">
-                                Kopieer aanvraag
-                            </button>
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.51.36.jpeg" alt="Foto bundel">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Foto Bundels</h2>
+                            <p class="showcase-description">Pre-made fotosets in drie vaste formaten voor een snelle keuze.</p>
                         </div>
-                    </article>
-                </div>
-            </section>
 
-            <p class="page-footer">Bundels is nu ingericht als een normale detailpagina voor Bundel 1.</p>
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies tier voor foto bundels">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€20.00" data-tier-note="eenmalig" data-tier-meta-one="10 foto's" data-tier-meta-two="Snel pakket">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€40.00" data-tier-note="eenmalig" data-tier-meta-one="25 foto's" data-tier-meta-two="Meer mix">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€70.00" data-tier-note="eenmalig" data-tier-meta-one="50 foto's" data-tier-meta-two="Volle gallery">Goud</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€20.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">10 foto's</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Snel pakket</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Direct te downloaden</li>
+                            <li>Mix van poses</li>
+                            <li>Hoge beeldkwaliteit</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.43.06.jpeg" alt="Opdracht bundel">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Opdracht Bundels</h2>
+                            <p class="showcase-description">Meer opdrachten per tier voor wie een grotere set wil pakken.</p>
+                        </div>
+
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies tier voor opdracht bundels">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€40.00" data-tier-note="eenmalig" data-tier-meta-one="3 opdrachten" data-tier-meta-two="Startpakket">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€75.00" data-tier-note="eenmalig" data-tier-meta-one="6 opdrachten" data-tier-meta-two="Meer variatie">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€120.00" data-tier-note="eenmalig" data-tier-meta-one="10 opdrachten" data-tier-meta-two="Maximale set">Goud</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€40.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">3 opdrachten</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Startpakket</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Duidelijke opbouw per tier</li>
+                            <li>Meer stuks bij hogere tier</li>
+                            <li>Geschikt voor vaste klanten</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.43.23.jpeg" alt="Chat pakketten">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Chat Pakketten</h2>
+                            <p class="showcase-description">Priv&eacute; chatsessies in drie tiers met steeds meer tijd samen.</p>
+                        </div>
+
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies tier voor chat pakketten">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€70.00" data-tier-note="per sessie" data-tier-meta-one="15 minuten" data-tier-meta-two="Direct contact">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€120.00" data-tier-note="per sessie" data-tier-meta-one="30 minuten" data-tier-meta-two="Meer aandacht">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€200.00" data-tier-note="per sessie" data-tier-meta-one="60 minuten" data-tier-meta-two="Langste tier">Goud</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€70.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">per sessie</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">15 minuten</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Direct contact</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Priv&eacute; en discreet</li>
+                            <li>1-op-1 aandacht</li>
+                            <li>Rustige opbouw</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.38.01.jpeg" alt="Training pakketten">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Training Pakketten</h2>
+                            <p class="showcase-description">Meer begeleiding naarmate het traject langer wordt opgebouwd.</p>
+                        </div>
+
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies tier voor training pakketten">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€125.00" data-tier-note="per traject" data-tier-meta-one="1 week" data-tier-meta-two="Instaptraject">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€200.00" data-tier-note="per traject" data-tier-meta-one="2 weken" data-tier-meta-two="Meer verdieping">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€350.00" data-tier-note="per traject" data-tier-meta-one="1 maand" data-tier-meta-two="Lang traject">Goud</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€125.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">per traject</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">1 week</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Instaptraject</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Geleidelijke opbouw</li>
+                            <li>Meer begeleiding per tier</li>
+                            <li>Per periode geprijsd</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.25.00.jpeg" alt="Custom foto bundel">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Custom Foto Bundel</h2>
+                            <p class="showcase-description">Op maat gemaakte fotosets met meer beelden naarmate je hoger kiest.</p>
+                        </div>
+
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies tier voor custom foto bundel">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€35.00" data-tier-note="eenmalig" data-tier-meta-one="10 foto's" data-tier-meta-two="Op maat">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€55.00" data-tier-note="eenmalig" data-tier-meta-one="25 foto's" data-tier-meta-two="Meer beelden">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€100.00" data-tier-note="eenmalig" data-tier-meta-one="50 foto's" data-tier-meta-two="Volledige set">Goud</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€35.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">10 foto's</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Op maat</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Afgestemd op jouw wens</li>
+                            <li>Persoonlijke selectie</li>
+                            <li>Premium uitstraling</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+            </section>
         </main>
     </div>
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prijsmenu | Sarrissa Candy</title>
+    <title>Prijzen | Sarrissa Candy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
                 <span class="brand-mark">SC</span>
                 <span class="brand-copy">
                     <strong>Sarrissa Candy</strong>
-                    <span>Compact prijsoverzicht</span>
+                    <span>Prijs showcase</span>
                 </span>
             </a>
 
@@ -53,379 +53,350 @@
             </nav>
 
             <div class="sidebar-note">
-                <p class="note-label">Compact</p>
-                <p>Korter, sneller scanbaar en alle prijzen direct in beeld.</p>
+                <p class="note-label">Showcase</p>
+                <p>Alle prijzen staan nu als kaarten met directe tier-switches.</p>
             </div>
         </aside>
 
-        <main class="content content-narrow pricing-compact-page">
-            <section class="hero-card hero-card-centered hero-card-compact" aria-labelledby="pricing-title">
-                <div class="hero-photo-frame hero-photo-frame-compact">
-                    <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.51.36.jpeg" alt="Sfeervolle hero-afbeelding voor de prijspagina">
-                </div>
-
-                <div class="hero-copy-centered hero-copy-compact">
-                    <p class="eyebrow">Prijsmenu</p>
-                    <h1 id="pricing-title">Alle prijzen in een kort en strak overzicht.</h1>
-                    <p>Minder tekst, minder scrollen en de belangrijkste categorieen meteen bereikbaar.</p>
-                    <div class="hero-badges" aria-label="Snelle links">
-                        <a href="#losse-videos">Direct</a>
-                        <a href="#bundels">Bundels</a>
-                        <a href="#customs">Customs</a>
-                        <a href="#boekingen">Sessies</a>
-                        <a href="#foto-opdrachten">Foto's</a>
-                    </div>
-                </div>
+        <main class="content catalog-page">
+            <section class="hero-card catalog-hero" aria-labelledby="pricing-title">
+                <h1 id="pricing-title">Slaven meld je!</h1>
             </section>
 
-            <div class="pricing-stack pricing-stack-compact">
-                <section class="pricing-card pricing-card-compact scroll-target" id="losse-videos" aria-labelledby="losse-videos-title">
-                    <div class="pricing-card-head">
-                        <div>
-                            <p class="eyebrow">Direct</p>
-                            <h2 id="losse-videos-title">Losse prijzen en bundels</h2>
-                        </div>
-                        <span class="pricing-accent">Snel gekozen</span>
+            <section class="catalog-grid" aria-label="Prijs overzicht">
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.21.11.jpeg" alt="Video pakket">
                     </div>
-
-                    <div class="pricing-subgroups-grid">
-                        <div class="pricing-subgroup pricing-subgroup-card">
-                            <h3>Losse video</h3>
-                            <div class="pricing-list pricing-list-tight">
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>Enkel item</span>
-                                        <small>Direct beschikbaar</small>
-                                    </div>
-                                    <strong>&euro; 20</strong>
-                                </div>
-                            </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Video</h2>
+                            <p class="showcase-description">Losse video of meteen een bundel, afhankelijk van hoeveel je wilt.</p>
                         </div>
 
-                        <div class="pricing-subgroup pricing-subgroup-card" id="bundels">
-                            <h3>Bundels</h3>
-                            <div class="pricing-list pricing-list-tight">
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>Brons</span>
-                                        <small>3 video's</small>
-                                    </div>
-                                    <strong>&euro; 45</strong>
-                                </div>
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>Zilver</span>
-                                        <small>5 video's</small>
-                                    </div>
-                                    <strong>&euro; 75</strong>
-                                </div>
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>Goud</span>
-                                        <small>8 video's</small>
-                                    </div>
-                                    <strong>&euro; 100</strong>
-                                </div>
-                            </div>
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies video tier">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€20.00" data-tier-note="eenmalig" data-tier-meta-one="1 video" data-tier-meta-two="Direct item">Losse</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€45.00" data-tier-note="eenmalig" data-tier-meta-one="3 video's" data-tier-meta-two="Bundel start">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€75.00" data-tier-note="eenmalig" data-tier-meta-one="5 video's" data-tier-meta-two="Meer variatie">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€100.00" data-tier-note="eenmalig" data-tier-meta-one="8 video's" data-tier-meta-two="Volle set">Goud</button>
                         </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€20.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">1 video</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Direct item</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Direct digitale levering</li>
+                            <li>HD videokwaliteit</li>
+                            <li>Los of in bundel</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
                     </div>
-                </section>
+                </article>
 
-                <div class="pricing-grid-compact">
-                    <section class="pricing-card pricing-card-compact scroll-target" id="customs" aria-labelledby="customs-title">
-                    <div class="pricing-card-head">
-                        <div>
-                            <p class="eyebrow">Maatwerk</p>
-                            <h2 id="customs-title">Customs</h2>
-                        </div>
-                        <span class="pricing-accent">Op maat</span>
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.43.06.jpeg" alt="Custom video">
                     </div>
-
-                    <div class="pricing-subgroups-grid">
-                        <div class="pricing-subgroup pricing-subgroup-card">
-                            <h3>Video op maat</h3>
-                            <div class="pricing-list pricing-list-tight">
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>1 tot 2 minuten</span>
-                                        <small>Korte custom</small>
-                                    </div>
-                                    <strong>&euro; 35</strong>
-                                </div>
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>4 tot 6 minuten</span>
-                                        <small>Uitgebreider format</small>
-                                    </div>
-                                    <strong>&euro; 85</strong>
-                                </div>
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>8 tot 10 minuten</span>
-                                        <small>Langer format</small>
-                                    </div>
-                                    <strong>&euro; 150</strong>
-                                </div>
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>15 tot 20 minuten</span>
-                                        <small>Meest uitgebreid</small>
-                                    </div>
-                                    <strong>&euro; 200</strong>
-                                </div>
-                            </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Custom Video</h2>
+                            <p class="showcase-description">Van korte clip tot lange custom, met oplopende duur en prijs.</p>
                         </div>
 
-                        <div class="pricing-subgroup pricing-subgroup-card">
-                            <h3>Foto bundel op maat</h3>
-                            <div class="pricing-list pricing-list-tight">
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>Brons</span>
-                                        <small>10 foto's</small>
-                                    </div>
-                                    <strong>&euro; 35</strong>
-                                </div>
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>Zilver</span>
-                                        <small>25 foto's</small>
-                                    </div>
-                                    <strong>&euro; 55</strong>
-                                </div>
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>Goud</span>
-                                        <small>50 foto's</small>
-                                    </div>
-                                    <strong>&euro; 100</strong>
-                                </div>
-                            </div>
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies custom video tier">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€35.00" data-tier-note="eenmalig" data-tier-meta-one="1 tot 2 minuten" data-tier-meta-two="Korte custom">1-2m</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€85.00" data-tier-note="eenmalig" data-tier-meta-one="4 tot 6 minuten" data-tier-meta-two="Uitgebreider format">4-6m</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€150.00" data-tier-note="eenmalig" data-tier-meta-one="8 tot 10 minuten" data-tier-meta-two="Langer format">8-10m</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€200.00" data-tier-note="eenmalig" data-tier-meta-one="15 tot 20 minuten" data-tier-meta-two="Langste custom">15-20m</button>
                         </div>
 
-                        <div class="pricing-subgroup pricing-subgroup-card pricing-subgroup-span">
-                            <h3>Extra opties</h3>
-                            <div class="pricing-list pricing-list-tight">
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>Naam</span>
-                                        <small>Persoonlijke toevoeging</small>
-                                    </div>
-                                    <strong>&euro; 10</strong>
-                                </div>
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>Binnen 24u geleverd</span>
-                                        <small>Spoedoptie</small>
-                                    </div>
-                                    <strong>&euro; 75</strong>
-                                </div>
-                                <div class="pricing-row">
-                                    <div class="pricing-row-copy">
-                                        <span>Binnen 48u geleverd</span>
-                                        <small>Snellere oplevering</small>
-                                    </div>
-                                    <strong>&euro; 50</strong>
-                                </div>
-                            </div>
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€35.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">1 tot 2 minuten</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Korte custom</span>
                         </div>
+
+                        <ul class="showcase-features">
+                            <li>Op maat gemaakt</li>
+                            <li>Korte of lange formats</li>
+                            <li>Duidelijke tieropbouw</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
                     </div>
-                    </section>
+                </article>
 
-                    <section class="pricing-card pricing-card-compact scroll-target" id="boekingen" aria-labelledby="boekingen-title">
-                        <div class="pricing-card-head">
-                            <div>
-                                <p class="eyebrow">Sessies</p>
-                                <h2 id="boekingen-title">Calls, chats en trainingen</h2>
-                            </div>
-                            <span class="pricing-accent">Op tijd</span>
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.25.00.jpeg" alt="Foto op maat">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Foto Op Maat</h2>
+                            <p class="showcase-description">Custom foto bundels in drie maten, van klein tot volledig.</p>
                         </div>
 
-                        <div class="pricing-subgroups-grid">
-                            <div class="pricing-subgroup pricing-subgroup-card">
-                                <h3>Videocall</h3>
-                                <div class="pricing-list pricing-list-tight">
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>3 min</span>
-                                            <small>Korte call</small>
-                                        </div>
-                                        <strong>&euro; 30</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>5 min</span>
-                                            <small>Snelle sessie</small>
-                                        </div>
-                                        <strong>&euro; 50</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>10 min</span>
-                                            <small>Meer tijd</small>
-                                        </div>
-                                        <strong>&euro; 75</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>15 min</span>
-                                            <small>Langste call</small>
-                                        </div>
-                                        <strong>&euro; 110</strong>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pricing-subgroup pricing-subgroup-card">
-                                <h3>Priv&eacute; chatsessies</h3>
-                                <div class="pricing-list pricing-list-tight">
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Brons</span>
-                                            <small>15 minuten</small>
-                                        </div>
-                                        <strong>&euro; 70</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Zilver</span>
-                                            <small>30 minuten</small>
-                                        </div>
-                                        <strong>&euro; 120</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Goud</span>
-                                            <small>60 minuten</small>
-                                        </div>
-                                        <strong>&euro; 200</strong>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pricing-subgroup pricing-subgroup-card pricing-subgroup-span">
-                                <h3>Trainingen</h3>
-                                <div class="pricing-list pricing-list-tight">
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Brons</span>
-                                            <small>1 week</small>
-                                        </div>
-                                        <strong>&euro; 125</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Zilver</span>
-                                            <small>2 weken</small>
-                                        </div>
-                                        <strong>&euro; 200</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Goud</span>
-                                            <small>1 maand</small>
-                                        </div>
-                                        <strong>&euro; 350</strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="pricing-card pricing-card-compact pricing-card-wide scroll-target" id="foto-opdrachten" aria-labelledby="photo-bundle-title">
-                        <div class="pricing-card-head">
-                            <div>
-                                <p class="eyebrow">Foto's en opdrachten</p>
-                                <h2 id="photo-bundle-title">Bundels en maatwerk</h2>
-                            </div>
-                            <span class="pricing-accent">Mix</span>
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies foto op maat tier">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€35.00" data-tier-note="eenmalig" data-tier-meta-one="10 foto's" data-tier-meta-two="Op maat">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€55.00" data-tier-note="eenmalig" data-tier-meta-one="25 foto's" data-tier-meta-two="Meer beelden">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€100.00" data-tier-note="eenmalig" data-tier-meta-one="50 foto's" data-tier-meta-two="Volle set">Goud</button>
                         </div>
 
-                        <div class="pricing-subgroups-grid pricing-subgroups-grid-triple">
-                            <div class="pricing-subgroup pricing-subgroup-card">
-                                <h3>Pre-made foto bundels</h3>
-                                <div class="pricing-list pricing-list-tight">
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Brons</span>
-                                            <small>10 foto's</small>
-                                        </div>
-                                        <strong>&euro; 20</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Zilver</span>
-                                            <small>25 foto's</small>
-                                        </div>
-                                        <strong>&euro; 40</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Goud</span>
-                                            <small>50 foto's</small>
-                                        </div>
-                                        <strong>&euro; 70</strong>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pricing-subgroup pricing-subgroup-card">
-                                <h3>Bundel opdrachten</h3>
-                                <div class="pricing-list pricing-list-tight">
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Brons</span>
-                                            <small>3 opdrachten</small>
-                                        </div>
-                                        <strong>&euro; 40</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Zilver</span>
-                                            <small>6 opdrachten</small>
-                                        </div>
-                                        <strong>&euro; 75</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Goud</span>
-                                            <small>10 opdrachten</small>
-                                        </div>
-                                        <strong>&euro; 120</strong>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pricing-subgroup pricing-subgroup-card">
-                                <h3>Custom opdrachten</h3>
-                                <div class="pricing-list pricing-list-tight">
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Brons</span>
-                                            <small>1 opdracht</small>
-                                        </div>
-                                        <strong>&euro; 40</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Zilver</span>
-                                            <small>3 opdrachten</small>
-                                        </div>
-                                        <strong>&euro; 110</strong>
-                                    </div>
-                                    <div class="pricing-row">
-                                        <div class="pricing-row-copy">
-                                            <span>Goud</span>
-                                            <small>5 opdrachten</small>
-                                        </div>
-                                        <strong>&euro; 175</strong>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€35.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">10 foto's</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Op maat</span>
                         </div>
-                    </section>
-                </div>
-            </div>
+
+                        <ul class="showcase-features">
+                            <li>Persoonlijk afgestemd</li>
+                            <li>Meer beelden per tier</li>
+                            <li>Premium beeldkwaliteit</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.51.21.jpeg" alt="Extra opties">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Extra Opties</h2>
+                            <p class="showcase-description">Kleine upgrades en spoedopties die je los kunt toevoegen.</p>
+                        </div>
+
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies extra optie">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€10.00" data-tier-note="toeslag" data-tier-meta-one="Naam" data-tier-meta-two="Persoonlijke toevoeging">Naam</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€75.00" data-tier-note="toeslag" data-tier-meta-one="Binnen 24 uur" data-tier-meta-two="Spoedservice">24u</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€50.00" data-tier-note="toeslag" data-tier-meta-one="Binnen 48 uur" data-tier-meta-two="Snellere levering">48u</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€10.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">toeslag</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">Naam</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Persoonlijke toevoeging</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Makkelijk los toe te voegen</li>
+                            <li>Snelle levertijden mogelijk</li>
+                            <li>Duidelijke vaste toeslagen</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.43.23.jpeg" alt="Videocall">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Videocall</h2>
+                            <p class="showcase-description">Kort of langer bellen, met direct oplopende tijd en prijs.</p>
+                        </div>
+
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies videocall tier">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€30.00" data-tier-note="per call" data-tier-meta-one="3 minuten" data-tier-meta-two="Korte call">3 min</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€50.00" data-tier-note="per call" data-tier-meta-one="5 minuten" data-tier-meta-two="Snelle sessie">5 min</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€75.00" data-tier-note="per call" data-tier-meta-one="10 minuten" data-tier-meta-two="Meer tijd">10 min</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€110.00" data-tier-note="per call" data-tier-meta-one="15 minuten" data-tier-meta-two="Langste call">15 min</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€30.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">per call</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">3 minuten</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Korte call</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Direct 1-op-1 contact</li>
+                            <li>Meerdere tijdsopties</li>
+                            <li>Snel te plannen</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.37.18.jpeg" alt="Privé chat">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Priv&eacute; Chat</h2>
+                            <p class="showcase-description">Drie tiers voor wie direct en persoonlijk contact wil.</p>
+                        </div>
+
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies chat tier">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€70.00" data-tier-note="per sessie" data-tier-meta-one="15 minuten" data-tier-meta-two="Brons tier">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€120.00" data-tier-note="per sessie" data-tier-meta-one="30 minuten" data-tier-meta-two="Zilver tier">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€200.00" data-tier-note="per sessie" data-tier-meta-one="60 minuten" data-tier-meta-two="Goud tier">Goud</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€70.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">per sessie</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">15 minuten</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Brons tier</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Priv&eacute; en direct</li>
+                            <li>Meer tijd per tier</li>
+                            <li>Rustige opbouw</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.39.06.jpeg" alt="Trainingen">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Trainingen</h2>
+                            <p class="showcase-description">Van korte instap tot een volledig maandtraject.</p>
+                        </div>
+
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies training tier">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€125.00" data-tier-note="per traject" data-tier-meta-one="1 week" data-tier-meta-two="Instaptraject">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€200.00" data-tier-note="per traject" data-tier-meta-one="2 weken" data-tier-meta-two="Meer verdieping">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€350.00" data-tier-note="per traject" data-tier-meta-one="1 maand" data-tier-meta-two="Vol traject">Goud</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€125.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">per traject</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">1 week</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Instaptraject</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Geleidelijke opbouw</li>
+                            <li>Meer begeleiding bij hogere tier</li>
+                            <li>Duidelijke vaste periodes</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.51.36.jpeg" alt="Foto bundels">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Foto Bundels</h2>
+                            <p class="showcase-description">Pre-made foto bundels in drie vaste maten voor snelle keuze.</p>
+                        </div>
+
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies foto bundel tier">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€20.00" data-tier-note="eenmalig" data-tier-meta-one="10 foto's" data-tier-meta-two="Snel pakket">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€40.00" data-tier-note="eenmalig" data-tier-meta-one="25 foto's" data-tier-meta-two="Meer mix">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€70.00" data-tier-note="eenmalig" data-tier-meta-one="50 foto's" data-tier-meta-two="Volle gallery">Goud</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€20.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">10 foto's</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Snel pakket</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Direct te downloaden</li>
+                            <li>Meer beelden per tier</li>
+                            <li>Heldere vaste prijzen</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.18.36.jpeg" alt="Opdracht bundels">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Opdracht Bundels</h2>
+                            <p class="showcase-description">Meer opdrachten in vaste bundels voor wie meteen groter wil inkopen.</p>
+                        </div>
+
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies opdracht bundel tier">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€40.00" data-tier-note="eenmalig" data-tier-meta-one="3 opdrachten" data-tier-meta-two="Startpakket">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€75.00" data-tier-note="eenmalig" data-tier-meta-one="6 opdrachten" data-tier-meta-two="Meer variatie">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€120.00" data-tier-note="eenmalig" data-tier-meta-one="10 opdrachten" data-tier-meta-two="Volle set">Goud</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€40.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">3 opdrachten</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Startpakket</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Vaste bundelgroottes</li>
+                            <li>Meer stuks per tier</li>
+                            <li>Duidelijk prijsverschil</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+
+                <article class="showcase-card" data-tier-card>
+                    <div class="showcase-media">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.15.39.jpeg" alt="Custom opdrachten">
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-copy-block">
+                            <h2 class="showcase-title">Custom Opdrachten</h2>
+                            <p class="showcase-description">Los maatwerk in drie tiers, afhankelijk van hoeveel je wilt laten maken.</p>
+                        </div>
+
+                        <div class="showcase-tier-switch" role="group" aria-label="Kies custom opdracht tier">
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€40.00" data-tier-note="eenmalig" data-tier-meta-one="1 opdracht" data-tier-meta-two="Instap custom">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€110.00" data-tier-note="eenmalig" data-tier-meta-one="3 opdrachten" data-tier-meta-two="Meer maatwerk">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€175.00" data-tier-note="eenmalig" data-tier-meta-one="5 opdrachten" data-tier-meta-two="Volle custom set">Goud</button>
+                        </div>
+
+                        <div class="showcase-price-block">
+                            <strong class="showcase-price" data-tier-output="price">€40.00</strong>
+                            <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
+                            <span class="showcase-price-meta" data-tier-output="meta-one">1 opdracht</span>
+                            <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Instap custom</span>
+                        </div>
+
+                        <ul class="showcase-features">
+                            <li>Los maatwerk per tier</li>
+                            <li>Meer opdrachten mogelijk</li>
+                            <li>Premium kaartstijl</li>
+                        </ul>
+
+                        <button class="showcase-cta" type="button">Koop nu</button>
+                    </div>
+                </article>
+            </section>
         </main>
     </div>
 </body>
