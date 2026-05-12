@@ -845,6 +845,103 @@ button {
     white-space: nowrap;
 }
 
+.pricing-compact-page {
+    gap: 1rem;
+}
+
+.content.content-narrow.pricing-compact-page {
+    width: min(1040px, 100%);
+}
+
+.pricing-stack-compact {
+    gap: 1rem;
+}
+
+.pricing-grid-compact {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+}
+
+.pricing-card-wide {
+    grid-column: 1 / -1;
+}
+
+.pricing-card-compact {
+    padding: clamp(1.1rem, 2vw, 1.5rem);
+    border-radius: 24px;
+}
+
+.pricing-card-compact .pricing-card-head {
+    margin-bottom: 0.95rem;
+}
+
+.pricing-card-compact .pricing-card-head h2 {
+    font-size: clamp(1.9rem, 3vw, 2.6rem);
+}
+
+.pricing-subgroups-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+
+.pricing-subgroups-grid-triple {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pricing-subgroup-card {
+    margin: 0;
+    padding: 0.95rem;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: inset 0 0 0 1px rgba(253, 99, 157, 0.1);
+}
+
+.pricing-subgroups-grid .pricing-subgroup + .pricing-subgroup {
+    margin-top: 0;
+    padding-top: 0.95rem;
+    border-top: 0;
+}
+
+.pricing-subgroup-span {
+    grid-column: 1 / -1;
+}
+
+.pricing-list-tight {
+    gap: 0.6rem;
+}
+
+.pricing-list-tight .pricing-row {
+    padding: 0.82rem 0.9rem;
+    border-radius: 18px;
+}
+
+.hero-card-compact {
+    padding: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+
+.hero-photo-frame-compact {
+    aspect-ratio: 16 / 7;
+    min-height: 220px;
+    margin-bottom: 1rem;
+}
+
+.hero-copy-compact {
+    gap: 0.7rem;
+}
+
+.hero-copy-compact h1 {
+    max-width: 16ch;
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+}
+
+.hero-copy-compact p {
+    max-width: 560px;
+    font-size: 0.98rem;
+}
+
 body[data-page="slaven"] .sidebar {
     background: rgba(16, 7, 14, 0.72);
     border-color: rgba(253, 99, 157, 0.18);
@@ -984,7 +1081,10 @@ body[data-page="slaven"] .copy-button:focus-visible {
     .bundle-detail-grid,
     .section-heading,
     .hero-split,
-    .request-layout {
+    .request-layout,
+    .pricing-grid-compact,
+    .pricing-subgroups-grid,
+    .pricing-subgroups-grid-triple {
         grid-template-columns: 1fr;
     }
 
@@ -995,6 +1095,11 @@ body[data-page="slaven"] .copy-button:focus-visible {
 
     .luxury-mini-grid {
         grid-template-columns: 1fr;
+    }
+
+    .pricing-card-wide,
+    .pricing-subgroup-span {
+        grid-column: auto;
     }
 }
 
