@@ -54,17 +54,29 @@
 
             <div class="sidebar-note">
                 <p class="note-label">Showcase</p>
-                <p>Alle prijzen staan nu als kaarten met directe tier-switches.</p>
+                <p>Kies een tier per product en stuur jouw keuze direct door naar het aparte bestelformulier.</p>
             </div>
         </aside>
 
         <main class="content catalog-page">
             <section class="hero-card catalog-hero" aria-labelledby="pricing-title">
-                <h1 id="pricing-title">Slaven meld je!</h1>
+                <p class="eyebrow">Prijzen</p>
+                <h1 id="pricing-title">Kies een product en bestel direct.</h1>
+                <p>Bekijk eerst de prijzen, kies daarna je tier en open het bestelformulier met jouw selectie al klaar.</p>
+
+                <div class="bundle-actions">
+                    <a class="ghost-link" href="bestellen.html">Open bestelformulier</a>
+                </div>
+
+                <div class="hero-badges" aria-label="Winkel kenmerken">
+                    <span>Tiers per product</span>
+                    <span>Direct bestellen</span>
+                    <span>Meerdere producten</span>
+                </div>
             </section>
 
             <section class="catalog-grid" aria-label="Prijs overzicht">
-                <article class="showcase-card" data-tier-card>
+                <article class="showcase-card" data-tier-card data-buy-card data-product-key="video">
                     <div class="showcase-media">
                         <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.21.11.jpeg" alt="Video pakket">
                     </div>
@@ -75,14 +87,14 @@
                         </div>
 
                         <div class="showcase-tier-switch" role="group" aria-label="Kies video tier">
-                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€20.00" data-tier-note="eenmalig" data-tier-meta-one="1 video" data-tier-meta-two="Direct item">Losse</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€45.00" data-tier-note="eenmalig" data-tier-meta-one="3 video's" data-tier-meta-two="Bundel start">Brons</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€75.00" data-tier-note="eenmalig" data-tier-meta-one="5 video's" data-tier-meta-two="Meer variatie">Zilver</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€100.00" data-tier-note="eenmalig" data-tier-meta-one="8 video's" data-tier-meta-two="Volle set">Goud</button>
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-id="losse" data-tier-price="&euro;20,00" data-tier-amount="20" data-tier-note="eenmalig" data-tier-meta-one="1 video" data-tier-meta-two="Direct item">Losse</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="brons" data-tier-price="&euro;45,00" data-tier-amount="45" data-tier-note="eenmalig" data-tier-meta-one="3 video's" data-tier-meta-two="Bundel start">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="zilver" data-tier-price="&euro;75,00" data-tier-amount="75" data-tier-note="eenmalig" data-tier-meta-one="5 video's" data-tier-meta-two="Meer variatie">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="goud" data-tier-price="&euro;100,00" data-tier-amount="100" data-tier-note="eenmalig" data-tier-meta-one="8 video's" data-tier-meta-two="Volle set">Goud</button>
                         </div>
 
                         <div class="showcase-price-block">
-                            <strong class="showcase-price" data-tier-output="price">€20.00</strong>
+                            <strong class="showcase-price" data-tier-output="price">&euro;20,00</strong>
                             <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
                             <span class="showcase-price-meta" data-tier-output="meta-one">1 video</span>
                             <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Direct item</span>
@@ -94,11 +106,11 @@
                             <li>Los of in bundel</li>
                         </ul>
 
-                        <button class="showcase-cta" type="button">Koop nu</button>
+                        <button class="showcase-cta" type="button" data-buy-now>Bestel deze keuze</button>
                     </div>
                 </article>
 
-                <article class="showcase-card" data-tier-card>
+                <article class="showcase-card" data-tier-card data-buy-card data-product-key="custom-video">
                     <div class="showcase-media">
                         <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.43.06.jpeg" alt="Custom video">
                     </div>
@@ -109,14 +121,14 @@
                         </div>
 
                         <div class="showcase-tier-switch" role="group" aria-label="Kies custom video tier">
-                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€35.00" data-tier-note="eenmalig" data-tier-meta-one="1 tot 2 minuten" data-tier-meta-two="Korte custom">1-2m</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€85.00" data-tier-note="eenmalig" data-tier-meta-one="4 tot 6 minuten" data-tier-meta-two="Uitgebreider format">4-6m</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€150.00" data-tier-note="eenmalig" data-tier-meta-one="8 tot 10 minuten" data-tier-meta-two="Langer format">8-10m</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€200.00" data-tier-note="eenmalig" data-tier-meta-one="15 tot 20 minuten" data-tier-meta-two="Langste custom">15-20m</button>
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-id="1-2m" data-tier-price="&euro;35,00" data-tier-amount="35" data-tier-note="eenmalig" data-tier-meta-one="1 tot 2 minuten" data-tier-meta-two="Korte custom">1-2m</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="4-6m" data-tier-price="&euro;85,00" data-tier-amount="85" data-tier-note="eenmalig" data-tier-meta-one="4 tot 6 minuten" data-tier-meta-two="Uitgebreider format">4-6m</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="8-10m" data-tier-price="&euro;150,00" data-tier-amount="150" data-tier-note="eenmalig" data-tier-meta-one="8 tot 10 minuten" data-tier-meta-two="Langer format">8-10m</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="15-20m" data-tier-price="&euro;200,00" data-tier-amount="200" data-tier-note="eenmalig" data-tier-meta-one="15 tot 20 minuten" data-tier-meta-two="Langste custom">15-20m</button>
                         </div>
 
                         <div class="showcase-price-block">
-                            <strong class="showcase-price" data-tier-output="price">€35.00</strong>
+                            <strong class="showcase-price" data-tier-output="price">&euro;35,00</strong>
                             <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
                             <span class="showcase-price-meta" data-tier-output="meta-one">1 tot 2 minuten</span>
                             <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Korte custom</span>
@@ -128,11 +140,11 @@
                             <li>Duidelijke tieropbouw</li>
                         </ul>
 
-                        <button class="showcase-cta" type="button">Koop nu</button>
+                        <button class="showcase-cta" type="button" data-buy-now>Bestel deze keuze</button>
                     </div>
                 </article>
 
-                <article class="showcase-card" data-tier-card>
+                <article class="showcase-card" data-tier-card data-buy-card data-product-key="foto-op-maat">
                     <div class="showcase-media">
                         <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.25.00.jpeg" alt="Foto op maat">
                     </div>
@@ -143,13 +155,13 @@
                         </div>
 
                         <div class="showcase-tier-switch" role="group" aria-label="Kies foto op maat tier">
-                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€35.00" data-tier-note="eenmalig" data-tier-meta-one="10 foto's" data-tier-meta-two="Op maat">Brons</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€55.00" data-tier-note="eenmalig" data-tier-meta-one="25 foto's" data-tier-meta-two="Meer beelden">Zilver</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€100.00" data-tier-note="eenmalig" data-tier-meta-one="50 foto's" data-tier-meta-two="Volle set">Goud</button>
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-id="brons" data-tier-price="&euro;35,00" data-tier-amount="35" data-tier-note="eenmalig" data-tier-meta-one="10 foto's" data-tier-meta-two="Op maat">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="zilver" data-tier-price="&euro;55,00" data-tier-amount="55" data-tier-note="eenmalig" data-tier-meta-one="25 foto's" data-tier-meta-two="Meer beelden">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="goud" data-tier-price="&euro;100,00" data-tier-amount="100" data-tier-note="eenmalig" data-tier-meta-one="50 foto's" data-tier-meta-two="Volle set">Goud</button>
                         </div>
 
                         <div class="showcase-price-block">
-                            <strong class="showcase-price" data-tier-output="price">€35.00</strong>
+                            <strong class="showcase-price" data-tier-output="price">&euro;35,00</strong>
                             <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
                             <span class="showcase-price-meta" data-tier-output="meta-one">10 foto's</span>
                             <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Op maat</span>
@@ -161,11 +173,11 @@
                             <li>Premium beeldkwaliteit</li>
                         </ul>
 
-                        <button class="showcase-cta" type="button">Koop nu</button>
+                        <button class="showcase-cta" type="button" data-buy-now>Bestel deze keuze</button>
                     </div>
                 </article>
 
-                <article class="showcase-card" data-tier-card>
+                <article class="showcase-card" data-tier-card data-buy-card data-product-key="extra-opties">
                     <div class="showcase-media">
                         <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.51.21.jpeg" alt="Extra opties">
                     </div>
@@ -176,13 +188,13 @@
                         </div>
 
                         <div class="showcase-tier-switch" role="group" aria-label="Kies extra optie">
-                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€10.00" data-tier-note="toeslag" data-tier-meta-one="Naam" data-tier-meta-two="Persoonlijke toevoeging">Naam</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€75.00" data-tier-note="toeslag" data-tier-meta-one="Binnen 24 uur" data-tier-meta-two="Spoedservice">24u</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€50.00" data-tier-note="toeslag" data-tier-meta-one="Binnen 48 uur" data-tier-meta-two="Snellere levering">48u</button>
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-id="naam" data-tier-price="&euro;10,00" data-tier-amount="10" data-tier-note="toeslag" data-tier-meta-one="Naam" data-tier-meta-two="Persoonlijke toevoeging">Naam</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="24u" data-tier-price="&euro;75,00" data-tier-amount="75" data-tier-note="toeslag" data-tier-meta-one="Binnen 24 uur" data-tier-meta-two="Spoedservice">24u</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="48u" data-tier-price="&euro;50,00" data-tier-amount="50" data-tier-note="toeslag" data-tier-meta-one="Binnen 48 uur" data-tier-meta-two="Snellere levering">48u</button>
                         </div>
 
                         <div class="showcase-price-block">
-                            <strong class="showcase-price" data-tier-output="price">€10.00</strong>
+                            <strong class="showcase-price" data-tier-output="price">&euro;10,00</strong>
                             <span class="showcase-price-note" data-tier-output="note">toeslag</span>
                             <span class="showcase-price-meta" data-tier-output="meta-one">Naam</span>
                             <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Persoonlijke toevoeging</span>
@@ -194,11 +206,11 @@
                             <li>Duidelijke vaste toeslagen</li>
                         </ul>
 
-                        <button class="showcase-cta" type="button">Koop nu</button>
+                        <button class="showcase-cta" type="button" data-buy-now>Bestel deze keuze</button>
                     </div>
                 </article>
 
-                <article class="showcase-card" data-tier-card>
+                <article class="showcase-card" data-tier-card data-buy-card data-product-key="videocall">
                     <div class="showcase-media">
                         <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.43.23.jpeg" alt="Videocall">
                     </div>
@@ -209,14 +221,14 @@
                         </div>
 
                         <div class="showcase-tier-switch" role="group" aria-label="Kies videocall tier">
-                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€30.00" data-tier-note="per call" data-tier-meta-one="3 minuten" data-tier-meta-two="Korte call">3 min</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€50.00" data-tier-note="per call" data-tier-meta-one="5 minuten" data-tier-meta-two="Snelle sessie">5 min</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€75.00" data-tier-note="per call" data-tier-meta-one="10 minuten" data-tier-meta-two="Meer tijd">10 min</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€110.00" data-tier-note="per call" data-tier-meta-one="15 minuten" data-tier-meta-two="Langste call">15 min</button>
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-id="3min" data-tier-price="&euro;30,00" data-tier-amount="30" data-tier-note="per call" data-tier-meta-one="3 minuten" data-tier-meta-two="Korte call">3 min</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="5min" data-tier-price="&euro;50,00" data-tier-amount="50" data-tier-note="per call" data-tier-meta-one="5 minuten" data-tier-meta-two="Snelle sessie">5 min</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="10min" data-tier-price="&euro;75,00" data-tier-amount="75" data-tier-note="per call" data-tier-meta-one="10 minuten" data-tier-meta-two="Meer tijd">10 min</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="15min" data-tier-price="&euro;110,00" data-tier-amount="110" data-tier-note="per call" data-tier-meta-one="15 minuten" data-tier-meta-two="Langste call">15 min</button>
                         </div>
 
                         <div class="showcase-price-block">
-                            <strong class="showcase-price" data-tier-output="price">€30.00</strong>
+                            <strong class="showcase-price" data-tier-output="price">&euro;30,00</strong>
                             <span class="showcase-price-note" data-tier-output="note">per call</span>
                             <span class="showcase-price-meta" data-tier-output="meta-one">3 minuten</span>
                             <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Korte call</span>
@@ -228,13 +240,13 @@
                             <li>Snel te plannen</li>
                         </ul>
 
-                        <button class="showcase-cta" type="button">Koop nu</button>
+                        <button class="showcase-cta" type="button" data-buy-now>Bestel deze keuze</button>
                     </div>
                 </article>
 
-                <article class="showcase-card" data-tier-card>
+                <article class="showcase-card" data-tier-card data-buy-card data-product-key="prive-chat">
                     <div class="showcase-media">
-                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.37.18.jpeg" alt="Privé chat">
+                        <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.37.18.jpeg" alt="Prive chat">
                     </div>
                     <div class="showcase-body">
                         <div class="showcase-copy-block">
@@ -243,13 +255,13 @@
                         </div>
 
                         <div class="showcase-tier-switch" role="group" aria-label="Kies chat tier">
-                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€70.00" data-tier-note="per sessie" data-tier-meta-one="15 minuten" data-tier-meta-two="Brons tier">Brons</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€120.00" data-tier-note="per sessie" data-tier-meta-one="30 minuten" data-tier-meta-two="Zilver tier">Zilver</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€200.00" data-tier-note="per sessie" data-tier-meta-one="60 minuten" data-tier-meta-two="Goud tier">Goud</button>
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-id="brons" data-tier-price="&euro;70,00" data-tier-amount="70" data-tier-note="per sessie" data-tier-meta-one="15 minuten" data-tier-meta-two="Brons tier">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="zilver" data-tier-price="&euro;120,00" data-tier-amount="120" data-tier-note="per sessie" data-tier-meta-one="30 minuten" data-tier-meta-two="Zilver tier">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="goud" data-tier-price="&euro;200,00" data-tier-amount="200" data-tier-note="per sessie" data-tier-meta-one="60 minuten" data-tier-meta-two="Goud tier">Goud</button>
                         </div>
 
                         <div class="showcase-price-block">
-                            <strong class="showcase-price" data-tier-output="price">€70.00</strong>
+                            <strong class="showcase-price" data-tier-output="price">&euro;70,00</strong>
                             <span class="showcase-price-note" data-tier-output="note">per sessie</span>
                             <span class="showcase-price-meta" data-tier-output="meta-one">15 minuten</span>
                             <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Brons tier</span>
@@ -261,11 +273,11 @@
                             <li>Rustige opbouw</li>
                         </ul>
 
-                        <button class="showcase-cta" type="button">Koop nu</button>
+                        <button class="showcase-cta" type="button" data-buy-now>Bestel deze keuze</button>
                     </div>
                 </article>
 
-                <article class="showcase-card" data-tier-card>
+                <article class="showcase-card" data-tier-card data-buy-card data-product-key="trainingen">
                     <div class="showcase-media">
                         <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.39.06.jpeg" alt="Trainingen">
                     </div>
@@ -276,13 +288,13 @@
                         </div>
 
                         <div class="showcase-tier-switch" role="group" aria-label="Kies training tier">
-                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€125.00" data-tier-note="per traject" data-tier-meta-one="1 week" data-tier-meta-two="Instaptraject">Brons</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€200.00" data-tier-note="per traject" data-tier-meta-one="2 weken" data-tier-meta-two="Meer verdieping">Zilver</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€350.00" data-tier-note="per traject" data-tier-meta-one="1 maand" data-tier-meta-two="Vol traject">Goud</button>
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-id="brons" data-tier-price="&euro;125,00" data-tier-amount="125" data-tier-note="per traject" data-tier-meta-one="1 week" data-tier-meta-two="Instaptraject">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="zilver" data-tier-price="&euro;200,00" data-tier-amount="200" data-tier-note="per traject" data-tier-meta-one="2 weken" data-tier-meta-two="Meer verdieping">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="goud" data-tier-price="&euro;350,00" data-tier-amount="350" data-tier-note="per traject" data-tier-meta-one="1 maand" data-tier-meta-two="Vol traject">Goud</button>
                         </div>
 
                         <div class="showcase-price-block">
-                            <strong class="showcase-price" data-tier-output="price">€125.00</strong>
+                            <strong class="showcase-price" data-tier-output="price">&euro;125,00</strong>
                             <span class="showcase-price-note" data-tier-output="note">per traject</span>
                             <span class="showcase-price-meta" data-tier-output="meta-one">1 week</span>
                             <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Instaptraject</span>
@@ -294,11 +306,11 @@
                             <li>Duidelijke vaste periodes</li>
                         </ul>
 
-                        <button class="showcase-cta" type="button">Koop nu</button>
+                        <button class="showcase-cta" type="button" data-buy-now>Bestel deze keuze</button>
                     </div>
                 </article>
 
-                <article class="showcase-card" data-tier-card>
+                <article class="showcase-card" data-tier-card data-buy-card data-product-key="foto-bundels">
                     <div class="showcase-media">
                         <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.51.36.jpeg" alt="Foto bundels">
                     </div>
@@ -309,13 +321,13 @@
                         </div>
 
                         <div class="showcase-tier-switch" role="group" aria-label="Kies foto bundel tier">
-                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€20.00" data-tier-note="eenmalig" data-tier-meta-one="10 foto's" data-tier-meta-two="Snel pakket">Brons</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€40.00" data-tier-note="eenmalig" data-tier-meta-one="25 foto's" data-tier-meta-two="Meer mix">Zilver</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€70.00" data-tier-note="eenmalig" data-tier-meta-one="50 foto's" data-tier-meta-two="Volle gallery">Goud</button>
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-id="brons" data-tier-price="&euro;20,00" data-tier-amount="20" data-tier-note="eenmalig" data-tier-meta-one="10 foto's" data-tier-meta-two="Snel pakket">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="zilver" data-tier-price="&euro;40,00" data-tier-amount="40" data-tier-note="eenmalig" data-tier-meta-one="25 foto's" data-tier-meta-two="Meer mix">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="goud" data-tier-price="&euro;70,00" data-tier-amount="70" data-tier-note="eenmalig" data-tier-meta-one="50 foto's" data-tier-meta-two="Volle gallery">Goud</button>
                         </div>
 
                         <div class="showcase-price-block">
-                            <strong class="showcase-price" data-tier-output="price">€20.00</strong>
+                            <strong class="showcase-price" data-tier-output="price">&euro;20,00</strong>
                             <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
                             <span class="showcase-price-meta" data-tier-output="meta-one">10 foto's</span>
                             <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Snel pakket</span>
@@ -327,11 +339,11 @@
                             <li>Heldere vaste prijzen</li>
                         </ul>
 
-                        <button class="showcase-cta" type="button">Koop nu</button>
+                        <button class="showcase-cta" type="button" data-buy-now>Bestel deze keuze</button>
                     </div>
                 </article>
 
-                <article class="showcase-card" data-tier-card>
+                <article class="showcase-card" data-tier-card data-buy-card data-product-key="opdracht-bundels">
                     <div class="showcase-media">
                         <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.18.36.jpeg" alt="Opdracht bundels">
                     </div>
@@ -342,13 +354,13 @@
                         </div>
 
                         <div class="showcase-tier-switch" role="group" aria-label="Kies opdracht bundel tier">
-                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€40.00" data-tier-note="eenmalig" data-tier-meta-one="3 opdrachten" data-tier-meta-two="Startpakket">Brons</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€75.00" data-tier-note="eenmalig" data-tier-meta-one="6 opdrachten" data-tier-meta-two="Meer variatie">Zilver</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€120.00" data-tier-note="eenmalig" data-tier-meta-one="10 opdrachten" data-tier-meta-two="Volle set">Goud</button>
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-id="brons" data-tier-price="&euro;40,00" data-tier-amount="40" data-tier-note="eenmalig" data-tier-meta-one="3 opdrachten" data-tier-meta-two="Startpakket">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="zilver" data-tier-price="&euro;75,00" data-tier-amount="75" data-tier-note="eenmalig" data-tier-meta-one="6 opdrachten" data-tier-meta-two="Meer variatie">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="goud" data-tier-price="&euro;120,00" data-tier-amount="120" data-tier-note="eenmalig" data-tier-meta-one="10 opdrachten" data-tier-meta-two="Volle set">Goud</button>
                         </div>
 
                         <div class="showcase-price-block">
-                            <strong class="showcase-price" data-tier-output="price">€40.00</strong>
+                            <strong class="showcase-price" data-tier-output="price">&euro;40,00</strong>
                             <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
                             <span class="showcase-price-meta" data-tier-output="meta-one">3 opdrachten</span>
                             <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Startpakket</span>
@@ -360,11 +372,11 @@
                             <li>Duidelijk prijsverschil</li>
                         </ul>
 
-                        <button class="showcase-cta" type="button">Koop nu</button>
+                        <button class="showcase-cta" type="button" data-buy-now>Bestel deze keuze</button>
                     </div>
                 </article>
 
-                <article class="showcase-card" data-tier-card>
+                <article class="showcase-card" data-tier-card data-buy-card data-product-key="custom-opdrachten">
                     <div class="showcase-media">
                         <img src="images/WhatsApp%20Image%202026-05-06%20at%2015.15.39.jpeg" alt="Custom opdrachten">
                     </div>
@@ -375,13 +387,13 @@
                         </div>
 
                         <div class="showcase-tier-switch" role="group" aria-label="Kies custom opdracht tier">
-                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-price="€40.00" data-tier-note="eenmalig" data-tier-meta-one="1 opdracht" data-tier-meta-two="Instap custom">Brons</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€110.00" data-tier-note="eenmalig" data-tier-meta-one="3 opdrachten" data-tier-meta-two="Meer maatwerk">Zilver</button>
-                            <button class="showcase-tier" type="button" data-tier-button data-tier-price="€175.00" data-tier-note="eenmalig" data-tier-meta-one="5 opdrachten" data-tier-meta-two="Volle custom set">Goud</button>
+                            <button class="showcase-tier is-active" type="button" data-tier-button data-tier-id="brons" data-tier-price="&euro;40,00" data-tier-amount="40" data-tier-note="eenmalig" data-tier-meta-one="1 opdracht" data-tier-meta-two="Instap custom">Brons</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="zilver" data-tier-price="&euro;110,00" data-tier-amount="110" data-tier-note="eenmalig" data-tier-meta-one="3 opdrachten" data-tier-meta-two="Meer maatwerk">Zilver</button>
+                            <button class="showcase-tier" type="button" data-tier-button data-tier-id="goud" data-tier-price="&euro;175,00" data-tier-amount="175" data-tier-note="eenmalig" data-tier-meta-one="5 opdrachten" data-tier-meta-two="Volle custom set">Goud</button>
                         </div>
 
                         <div class="showcase-price-block">
-                            <strong class="showcase-price" data-tier-output="price">€40.00</strong>
+                            <strong class="showcase-price" data-tier-output="price">&euro;40,00</strong>
                             <span class="showcase-price-note" data-tier-output="note">eenmalig</span>
                             <span class="showcase-price-meta" data-tier-output="meta-one">1 opdracht</span>
                             <span class="showcase-price-meta is-soft" data-tier-output="meta-two">Instap custom</span>
@@ -393,7 +405,7 @@
                             <li>Premium kaartstijl</li>
                         </ul>
 
-                        <button class="showcase-cta" type="button">Koop nu</button>
+                        <button class="showcase-cta" type="button" data-buy-now>Bestel deze keuze</button>
                     </div>
                 </article>
             </section>

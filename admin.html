@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Sarrissa Candy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
+</head>
+<body data-page="admin">
+    <div class="site-shell">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">SC</span>
+                <span class="brand-copy">
+                    <strong>Sarrissa Candy</strong>
+                    <span>Admin beheer</span>
+                </span>
+            </a>
+
+            <button class="sidebar-toggle" type="button" aria-expanded="false" aria-controls="sidebar-nav" data-sidebar-toggle>
+                Menu openen
+            </button>
+
+            <nav class="sidebar-nav" id="sidebar-nav" data-sidebar-nav aria-label="Admin menu">
+                <a class="side-link" href="index.html" data-nav-link="home">
+                    <span>Home</span>
+                    <small>Start</small>
+                </a>
+                <a class="side-link" href="slaven.html" data-nav-link="slaven">
+                    <span>Prijzen</span>
+                    <small>05</small>
+                </a>
+                <a class="side-link" href="bestellen.html" data-nav-link="bestellen">
+                    <span>Bestellen</span>
+                    <small>06</small>
+                </a>
+                <a class="side-link" href="admin.html" data-nav-link="admin">
+                    <span>Admin</span>
+                    <small>07</small>
+                </a>
+            </nav>
+
+            <div class="sidebar-note">
+                <p class="note-label">Admin</p>
+                <p>Deze pagina is voor klantbeheer. Alle data blijft lokaal bewaard in deze browser.</p>
+            </div>
+        </aside>
+
+        <main class="content catalog-page">
+            <section class="hero-card catalog-hero client-hero" aria-labelledby="clients-title">
+                <p class="eyebrow">Klantenbeheer</p>
+                <h1 id="clients-title">Admin klanten dashboard</h1>
+                <p>Voeg klanten toe, hou contactmomenten bij en filter snel op status. Deze beheerpagina staat nu los van de klantgerichte shop.</p>
+
+                <div class="hero-badges" aria-label="Dashboard kenmerken">
+                    <span>Lokale opslag</span>
+                    <span>Status pipeline</span>
+                    <span>Bewerken en verwijderen</span>
+                </div>
+            </section>
+
+            <section class="client-stats-grid" aria-label="Klanten statistieken">
+                <article class="client-stat-card">
+                    <span class="client-stat-label">Totaal klanten</span>
+                    <strong class="client-stat-value" data-client-stat="total">0</strong>
+                    <p>Alle klantprofielen die nu in het systeem staan.</p>
+                </article>
+
+                <article class="client-stat-card">
+                    <span class="client-stat-label">Actief</span>
+                    <strong class="client-stat-value" data-client-stat="active">0</strong>
+                    <p>Klanten met een lopend gesprek of traject.</p>
+                </article>
+
+                <article class="client-stat-card">
+                    <span class="client-stat-label">Follow-up vandaag</span>
+                    <strong class="client-stat-value" data-client-stat="followup">0</strong>
+                    <p>Klanten met een contactdatum die vandaag of eerder valt.</p>
+                </article>
+
+                <article class="client-stat-card">
+                    <span class="client-stat-label">Totale omzet</span>
+                    <strong class="client-stat-value" data-client-stat="revenue">&euro; 0,00</strong>
+                    <p>Optelsom van alle ingevulde klantbedragen.</p>
+                </article>
+            </section>
+
+            <section class="client-system-layout" data-client-system>
+                <section class="panel client-form-panel" aria-labelledby="client-form-title">
+                    <div class="section-heading client-panel-heading">
+                        <div>
+                            <p class="eyebrow">Invoer</p>
+                            <h2 id="client-form-title">Nieuwe klant</h2>
+                        </div>
+
+                        <span class="pricing-accent" data-client-form-state>Nieuw profiel</span>
+                    </div>
+
+                    <p class="section-copy">Gebruik dit formulier om klanten toe te voegen of bestaande profielen bij te werken.</p>
+
+                    <form class="form-fields" data-client-form>
+                        <input type="hidden" name="id">
+
+                        <div class="client-form-grid">
+                            <div class="field-block">
+                                <label class="field-label" for="client-name">Naam</label>
+                                <input class="field-input" id="client-name" name="name" type="text" placeholder="Bijv. Mila de Vries" required>
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="client-contact">Contact</label>
+                                <input class="field-input" id="client-contact" name="contact" type="text" placeholder="@instagram, mail of telefoon" required>
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="client-channel">Kanaal</label>
+                                <select class="field-input pricing-select" id="client-channel" name="channel">
+                                    <option value="WhatsApp">WhatsApp</option>
+                                    <option value="Telegram">Telegram</option>
+                                    <option value="Instagram">Instagram</option>
+                                    <option value="Email">Email</option>
+                                    <option value="Anders">Anders</option>
+                                </select>
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="client-status">Status</label>
+                                <select class="field-input pricing-select" id="client-status" name="status">
+                                    <option value="nieuw">Nieuw</option>
+                                    <option value="actief">Actief</option>
+                                    <option value="followup">Follow-up</option>
+                                    <option value="wachten">Wachten</option>
+                                    <option value="vip">VIP</option>
+                                    <option value="afgerond">Afgerond</option>
+                                </select>
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="client-package">Pakket of product</label>
+                                <input class="field-input" id="client-package" name="packageName" type="text" placeholder="Bijv. Premium bundel">
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="client-followup-date">Volgende contactdatum</label>
+                                <input class="field-input" id="client-followup-date" name="nextFollowUp" type="date">
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="client-amount">Omzet in euro</label>
+                                <input class="field-input" id="client-amount" name="amount" type="number" min="0" step="0.01" placeholder="0.00">
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="client-priority">Prioriteit</label>
+                                <select class="field-input pricing-select" id="client-priority" name="priority">
+                                    <option value="Normaal">Normaal</option>
+                                    <option value="Hoog">Hoog</option>
+                                    <option value="Urgent">Urgent</option>
+                                </select>
+                            </div>
+
+                            <div class="field-block field-block-full">
+                                <label class="field-label" for="client-notes">Notities</label>
+                                <textarea class="field-textarea field-textarea-small" id="client-notes" name="notes" placeholder="Belangrijke voorkeuren, afspraken of de volgende stap."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="client-form-actions">
+                            <button class="copy-button" type="submit" data-client-submit>Klant opslaan</button>
+                            <button class="ghost-link client-secondary-button" type="button" data-client-reset>Formulier leegmaken</button>
+                        </div>
+
+                        <p class="copy-feedback client-feedback" data-client-feedback aria-live="polite"></p>
+                    </form>
+                </section>
+
+                <section class="panel client-list-panel" aria-labelledby="client-list-title">
+                    <div class="section-heading client-panel-heading">
+                        <div>
+                            <p class="eyebrow">Overzicht</p>
+                            <h2 id="client-list-title">Klantenlijst</h2>
+                        </div>
+
+                        <button class="ghost-link client-export-button" type="button" data-client-export>Kopieer overzicht</button>
+                    </div>
+
+                    <div class="client-toolbar">
+                        <div class="field-block">
+                            <label class="field-label" for="client-search">Zoeken</label>
+                            <input class="field-input" id="client-search" data-client-search type="search" placeholder="Zoek op naam, pakket, kanaal of notitie">
+                        </div>
+
+                        <div class="client-filter-grid">
+                            <div class="field-block">
+                                <label class="field-label" for="client-filter-status">Statusfilter</label>
+                                <select class="field-input pricing-select" id="client-filter-status" data-client-filter-status>
+                                    <option value="all">Alle statussen</option>
+                                    <option value="nieuw">Nieuw</option>
+                                    <option value="actief">Actief</option>
+                                    <option value="followup">Follow-up</option>
+                                    <option value="wachten">Wachten</option>
+                                    <option value="vip">VIP</option>
+                                    <option value="afgerond">Afgerond</option>
+                                </select>
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="client-sort">Sorteren op</label>
+                                <select class="field-input pricing-select" id="client-sort" data-client-sort>
+                                    <option value="updated">Laatst gewijzigd</option>
+                                    <option value="followup">Volgende contactdatum</option>
+                                    <option value="amount">Hoogste omzet</option>
+                                    <option value="name">Naam A-Z</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="page-intro client-results" data-client-results>0 klanten zichtbaar</p>
+
+                    <div class="client-list" data-client-list></div>
+
+                    <div class="client-empty" data-client-empty hidden>
+                        <strong>Nog geen klanten gevonden</strong>
+                        <p>Voeg links een klant toe of pas je zoekopdracht en filters aan.</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

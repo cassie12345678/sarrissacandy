@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellen | Sarrissa Candy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
+</head>
+<body data-page="bestellen">
+    <div class="site-shell">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">SC</span>
+                <span class="brand-copy">
+                    <strong>Sarrissa Candy</strong>
+                    <span>Bestelformulier</span>
+                </span>
+            </a>
+
+            <button class="sidebar-toggle" type="button" aria-expanded="false" aria-controls="sidebar-nav" data-sidebar-toggle>
+                Menu openen
+            </button>
+
+            <nav class="sidebar-nav" id="sidebar-nav" data-sidebar-nav aria-label="Hoofdmenu">
+                <a class="side-link" href="index.html" data-nav-link="home">
+                    <span>Home</span>
+                    <small>Start</small>
+                </a>
+                <a class="side-link" href="bundels.html" data-nav-link="bundels">
+                    <span>Bundels</span>
+                    <small>01</small>
+                </a>
+                <a class="side-link" href="videos.html" data-nav-link="videos">
+                    <span>Video's</span>
+                    <small>02</small>
+                </a>
+                <a class="side-link" href="customs.html" data-nav-link="customs">
+                    <span>Customs</span>
+                    <small>03</small>
+                </a>
+                <a class="side-link" href="boekingen.html" data-nav-link="boekingen">
+                    <span>Boekingen</span>
+                    <small>04</small>
+                </a>
+                <a class="side-link" href="slaven.html" data-nav-link="slaven">
+                    <span>Prijzen</span>
+                    <small>05</small>
+                </a>
+                <a class="side-link" href="bestellen.html" data-nav-link="bestellen">
+                    <span>Bestellen</span>
+                    <small>06</small>
+                </a>
+            </nav>
+
+            <div class="sidebar-note">
+                <p class="note-label">Shop</p>
+                <p>Klanten kunnen hier producten kiezen, meerdere items combineren en hun bestelling klaarzetten.</p>
+            </div>
+        </aside>
+
+        <main class="content catalog-page">
+            <section class="hero-card catalog-hero order-hero" aria-labelledby="order-title">
+                <p class="eyebrow">Bestellen</p>
+                <h1 id="order-title">Stel je bestelling samen.</h1>
+                <p>Kies een product, selecteer de tier, voeg meerdere items toe en kopieer daarna de complete bestelling om te versturen.</p>
+
+                <div class="hero-badges" aria-label="Bestel kenmerken">
+                    <span>Meerdere producten</span>
+                    <span>Direct totaal</span>
+                    <span>Snelle aanvraag</span>
+                </div>
+            </section>
+
+            <section class="panel order-catalog-panel" aria-labelledby="order-catalog-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Catalogus</p>
+                        <h2 id="order-catalog-title">Kies eerst je product</h2>
+                    </div>
+                    <p class="section-copy">Klik op een productkaart om het direct in de besteller te laden.</p>
+                </div>
+
+                <div class="order-catalog-grid" data-order-catalog></div>
+            </section>
+
+            <section class="order-system-layout" data-order-system>
+                <section class="panel order-builder-panel" aria-labelledby="order-builder-title">
+                    <div class="section-heading order-panel-heading">
+                        <div>
+                            <p class="eyebrow">Stap 1</p>
+                            <h2 id="order-builder-title">Product toevoegen</h2>
+                        </div>
+
+                        <a class="ghost-link" href="slaven.html">Terug naar prijzen</a>
+                    </div>
+
+                    <p class="section-copy">Kies hieronder de juiste tier en voeg die toe aan je bestelling.</p>
+
+                    <form class="form-fields" data-order-builder>
+                        <div class="client-form-grid">
+                            <div class="field-block">
+                                <label class="field-label" for="order-product">Product</label>
+                                <select class="field-input pricing-select" id="order-product" data-order-product-select></select>
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="order-tier">Tier</label>
+                                <select class="field-input pricing-select" id="order-tier" data-order-tier-select></select>
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="order-quantity">Aantal</label>
+                                <input class="field-input" id="order-quantity" data-order-quantity type="number" min="1" step="1" value="1">
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="order-line-note">Extra wens</label>
+                                <input class="field-input" id="order-line-note" data-order-line-note type="text" placeholder="Bijv. specifieke stijl of voorkeur">
+                            </div>
+                        </div>
+
+                        <div class="order-selection-preview">
+                            <span class="client-detail-label">Huidige keuze</span>
+                            <strong data-order-preview-name>Video - Losse</strong>
+                            <p data-order-preview-meta>1 video · eenmalig</p>
+                            <b data-order-preview-price>&euro;20,00</b>
+                        </div>
+
+                        <div class="client-form-actions">
+                            <button class="copy-button" type="submit">Toevoegen aan bestelling</button>
+                        </div>
+
+                        <p class="copy-feedback client-feedback" data-order-builder-feedback aria-live="polite"></p>
+                    </form>
+                </section>
+
+                <section class="panel order-summary-panel" aria-labelledby="order-summary-title">
+                    <div class="section-heading order-panel-heading">
+                        <div>
+                            <p class="eyebrow">Stap 2</p>
+                            <h2 id="order-summary-title">Jouw bestelling</h2>
+                        </div>
+
+                        <span class="pricing-accent" data-order-count>0 items</span>
+                    </div>
+
+                    <div class="order-cart-list" data-order-cart></div>
+
+                    <div class="order-empty" data-order-empty hidden>
+                        <strong>Je bestelling is nog leeg</strong>
+                        <p>Kies links een product en voeg het toe om hier je overzicht te zien.</p>
+                    </div>
+
+                    <div class="order-summary-box">
+                        <div class="order-total-row">
+                            <span>Subtotaal</span>
+                            <strong data-order-subtotal>&euro;0,00</strong>
+                        </div>
+                        <div class="order-total-row is-strong">
+                            <span>Totaal</span>
+                            <strong data-order-total>&euro;0,00</strong>
+                        </div>
+                    </div>
+
+                    <form class="form-fields" data-order-customer-form>
+                        <div class="client-form-grid">
+                            <div class="field-block">
+                                <label class="field-label" for="order-customer-name">Naam</label>
+                                <input class="field-input" id="order-customer-name" name="name" type="text" placeholder="Jouw naam" required>
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="order-customer-contact">Contact</label>
+                                <input class="field-input" id="order-customer-contact" name="contact" type="text" placeholder="Instagram, mail of WhatsApp" required>
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="order-customer-channel">Voorkeurskanaal</label>
+                                <select class="field-input pricing-select" id="order-customer-channel" name="channel">
+                                    <option value="WhatsApp">WhatsApp</option>
+                                    <option value="Telegram">Telegram</option>
+                                    <option value="Instagram">Instagram</option>
+                                    <option value="Email">Email</option>
+                                </select>
+                            </div>
+
+                            <div class="field-block">
+                                <label class="field-label" for="order-customer-delivery">Levering</label>
+                                <select class="field-input pricing-select" id="order-customer-delivery" name="delivery">
+                                    <option value="Zo snel mogelijk">Zo snel mogelijk</option>
+                                    <option value="Binnen 48 uur">Binnen 48 uur</option>
+                                    <option value="Binnen een week">Binnen een week</option>
+                                    <option value="In overleg">In overleg</option>
+                                </select>
+                            </div>
+
+                            <div class="field-block field-block-full">
+                                <label class="field-label" for="order-customer-notes">Algemene notities</label>
+                                <textarea class="field-textarea field-textarea-small" id="order-customer-notes" name="notes" placeholder="Extra uitleg over je bestelling of voorkeuren."></textarea>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="client-form-actions">
+                        <button class="copy-button" type="button" data-order-copy>Kopieer bestelling</button>
+                        <button class="ghost-link client-secondary-button" type="button" data-order-clear>Bestelling leegmaken</button>
+                    </div>
+
+                    <p class="copy-feedback client-feedback" data-order-feedback aria-live="polite"></p>
+                </section>
+            </section>
+
+            <section class="panel client-tips-panel" aria-labelledby="order-how-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Zo werkt het</p>
+                        <h2 id="order-how-title">Bestellen in drie stappen</h2>
+                    </div>
+                    <p class="section-copy">Deze shop werkt zonder backend, dus de bestelling wordt klaar gezet en gekopieerd om direct te versturen.</p>
+                </div>
+
+                <div class="mini-grid luxury-mini-grid">
+                    <article class="mini-card">
+                        <strong>1. Product kiezen</strong>
+                        <p>Open een productkaart of selecteer zelf het product en de gewenste tier.</p>
+                    </article>
+
+                    <article class="mini-card">
+                        <strong>2. Bestelling opbouwen</strong>
+                        <p>Voeg meerdere items toe en controleer direct het totaalbedrag in het overzicht.</p>
+                    </article>
+
+                    <article class="mini-card">
+                        <strong>3. Klaarzetten</strong>
+                        <p>Kopieer de bestelling en verstuur die via jouw favoriete kanaal om de aankoop af te ronden.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
